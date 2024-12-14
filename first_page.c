@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <curses.h>
 #include <stdlib.h>
 void first_page(int welcome_key){
 	if(welcome_key==1){

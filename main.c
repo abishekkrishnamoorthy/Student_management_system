@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <curses.h>
 #include "stud_ma.h"
 int main(){
 	int welcome;
