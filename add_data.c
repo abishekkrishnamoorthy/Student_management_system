@@ -116,10 +116,10 @@ void add_data(){
 		sum=sum+s[i].sub_mark[j];
 		printf("\n sum is %d ",sum);
 	}
-        printf("\n sum is %d ",sum);
-	s[i].percentage=sum/500;
-        printf("\n %f",s[i].percentage);
 
+        printf("\n sum is %d ",sum);
+	s[i].percentage=(sum/500)*100;
+        printf("\n %d",s[i].percentage);
 
 
     }

@@ -10,7 +10,7 @@ typedef struct{
 	int  year_to;
         char father_name[50];
         char father_phone[10];
-	float  percentage;
+	int  percentage;
         int  sub_mark[5];
         char grade[10];
         int  cgpa;
