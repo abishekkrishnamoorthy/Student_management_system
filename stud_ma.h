@@ -13,7 +13,6 @@ typedef struct{
 	int  percentage;
         int  sub_mark[5];
         char grade[10];
-        int  cgpa;
 } student ;
 extern student  s[10];
 void add_data() ;

@@ -120,7 +120,12 @@ void add_data(){
         printf("\n sum is %d ",sum);
 	s[i].percentage=sum/5;
         printf("\n %d",s[i].percentage);
-
+       
+	strcpy(s[i].grade, s[i].percentage>35?
+			             s[i].percentage>=40 && s[i].percentage<60?
+		       	                                      "C":s[i].percentage>=60 && s[i].percentage<=80? 
+							                                              "B":"A" 
+												           :"FAIL");
 
     }
         

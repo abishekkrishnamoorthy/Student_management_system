@@ -5,7 +5,5 @@ int main(){
 	printf("Welcome to Student management system ");
 	scanf("%d",&welcome);
 	first_page(welcome);
-	add_data();
-	view_data();
 	return 0;
 }
