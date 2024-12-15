@@ -118,7 +118,7 @@ void add_data(){
 	}
 
         printf("\n sum is %d ",sum);
-	s[i].percentage=(sum/500)*100;
+	s[i].percentage=sum/5;
         printf("\n %d",s[i].percentage);
 
 
