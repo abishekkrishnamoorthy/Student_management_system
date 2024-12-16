@@ -14,16 +14,16 @@ void add_data(){
 	printf("\nDepartment: ");
 	printf("1. ug  2. pg");
 	scanf("%d",&op);
-	while(op > 2 || op < 0){
+	while(op>2 || op<=0){
 	printf("\nYou choose invalid option, so Try again!\n\n");
 	printf("1. ug  2. pg");
 	scanf("%d",&op);
 	}
         if(op<=2 && op>0){
 		if(op==1){
-			printf("\n choose department");
-			printf("1.B,sc IT 2. B,sc CS 3.B,sc pharmacy");
-		        scanf("%d",&op);
+			printf("\nchoose department");
+			printf("\n|1.B,sc IT|  |2. B,sc CS|  |3.B,sc pharmacy|");
+		        scanf("\n%d",&op);
 		        switch(op){
 				case 1:snprintf(dept, 50, "Bsc IT");
 				       break;
@@ -36,7 +36,7 @@ void add_data(){
 		}
 	       else if(op==2){
                         printf("\n choose department");
-                        printf("1.MCA  2. MBA  3.M,sc pharmacy");
+                        printf("\n|1.MCA|  |2. MBA|  |3.M,sc pharmacy|");
                         scanf("%d",&op);
                         switch(op){
                                 case 1:snprintf(dept, 50, "MCA");
@@ -50,8 +50,7 @@ void add_data(){
                 }
 		
 	}
-        printf("\n%s\n",dept);
-
+        printf("\nDEPT: %s",dept);
         printf("\nhow many records are you going yo add?");
 	scanf("%d",&no_data);
 	for (int i = 0; i < no_data; i++) {
