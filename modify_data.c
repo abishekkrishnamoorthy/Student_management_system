@@ -2,6 +2,18 @@
 #include<stdlib.h>
 #include "stud_ma.h"
 
+int search_name(){
+	char *name;
+	int s=0;
+	printf("Enter name of a student: ");
+	scanf("%s",name);
+	for(int i=0;i<10;i++){
+		if(name==s[i].name) {
+		
+		}
+	}
+}
+
 
 void  modify_data(){
 	int op;
@@ -12,5 +24,7 @@ void  modify_data(){
         printf("\noption wrong, choose 1 or 2");
         scanf("\n%d",&op);
 	}
+
+	
 
 }
