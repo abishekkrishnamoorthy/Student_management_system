@@ -113,10 +113,8 @@ void add_data(){
 		printf("\nSubject %d: ",j+1);
 		scanf("%d",&s[i].sub_mark[j]);
 		sum=sum+s[i].sub_mark[j];
-		printf("\n sum is %d ",sum);
 	}
 
-        printf("\n sum is %d ",sum);
 	s[i].percentage=sum/5;
         printf("\n %d",s[i].percentage);
        

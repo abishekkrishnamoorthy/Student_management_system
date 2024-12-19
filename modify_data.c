@@ -2,19 +2,26 @@
 #include<stdlib.h>
 #include "stud_ma.h"
 
-int search_name(){
-	char *name;
-	int s=0;
-	printf("Enter name of a student: ");
-	scanf("%s",name);
+
+int index_rollno(int roll_no){
 	for(int i=0;i<10;i++){
-		if(name==s[i].name) {
-		
+		if (roll_no==s[i].reg_no) {
+			return i;
+			break;
 		}
+		else return 11;
 	}
 }
 
-
+void search_rollno(){
+	int roll_no;
+	printf("\nRoll_no of a Student:  ");
+	scanf("%d",&roll_no);
+        if(index_rollno(roll_no)<11){
+		int index=index_rollno(roll_no);
+		printf("\nstudent data founded");
+	}else printf("\n not founded");
+}
 void  modify_data(){
 	int op;
 	// searching index
@@ -24,7 +31,13 @@ void  modify_data(){
         printf("\noption wrong, choose 1 or 2");
         scanf("\n%d",&op);
 	}
-
+        switch(op){
+		case 1: printf("Its under process");
+			break;
+		case 2: search_rollno();
+			break;
+	}  
+       
 	
 
 }

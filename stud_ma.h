@@ -17,4 +17,5 @@ typedef struct{
 extern student  s[10];
 void add_data() ;
 void view_data();
+void modify_data();
 void first_page(int);

@@ -27,6 +27,12 @@ void first_page(int welcome_key){
 			scanf("%d",&value);
 			if(value==1) back=1; else {exit=0; back=1;} 
 			break;
+		case 3:modify_data();
+		       printf("\nDo u want to exit from all, press 0 \nor\nIf u want to go back to menu, press 1\n");
+                       scanf("%d",&value);
+                       if(value==1) back=1; else {exit=0; back=1;}
+                       break;
+
 
        }
 	}while(back!=1);
