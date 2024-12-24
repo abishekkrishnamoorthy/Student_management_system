@@ -3,20 +3,24 @@
 #include "stud_ma.h"
 
 
-int index_rollno(int roll_no){
-	for(int i=0;i<10;i++){
-		if (roll_no==s[i].reg_no) {
-			return i;
-			break;
-		}
-		else return 11;
+int index_rollno(int roll_no){  
+	int index;
+	int i=0;
+	while(i<=10){
+               if(roll_no==s[i].reg_no){
+		       index=i;
+		       i=10;
+	       }
+	       i++;
 	}
+	return index;
 }
 
 void search_rollno(){
 	int roll_no;
 	printf("\nRoll_no of a Student:  ");
 	scanf("%d",&roll_no);
+	printf("%d",index_rollno(roll_no));
         if(index_rollno(roll_no)<11){
 		int index=index_rollno(roll_no);
 		printf("\nstudent data founded");
