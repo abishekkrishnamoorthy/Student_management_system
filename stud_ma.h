@@ -15,6 +15,7 @@ typedef struct{
         char grade[10];
 } student ;
 extern student  s[10];
+void add();
 void add_data() ;
 void view_data();
 void modify_data();
