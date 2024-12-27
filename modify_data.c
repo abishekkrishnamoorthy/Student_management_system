@@ -16,7 +16,16 @@ int index_rollno(int roll_no){
 	return index;
 }
 
-void search_rollno(){
+void modify(int index){
+	char op;
+        printf("\nWant to change entire data of this student?\n (y/n)");
+	scanf("%c",&op);
+	if(op =='y') add(s[index].dept,index);
+	else printf("under process");
+}
+
+
+void by_rollno(){
 	int roll_no;
 	printf("\nRoll_no of a Student:  ");
 	scanf("%d",&roll_no);
@@ -24,6 +33,7 @@ void search_rollno(){
         if(index_rollno(roll_no)<11){
 		int index=index_rollno(roll_no);
 		printf("\nstudent data founded");
+		modify(index);
 	}else printf("\n not founded");
 }
 void  modify_data(){
@@ -38,7 +48,7 @@ void  modify_data(){
         switch(op){
 		case 1: printf("Its under process");
 			break;
-		case 2: search_rollno();
+		case 2: by_rollno();
 			break;
 	}  
        
