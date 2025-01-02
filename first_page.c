@@ -17,9 +17,12 @@ void first_page(int welcome_key){
 	switch(op)
 	{
 		case 1: add_data();
-			printf("\nDo u want to exit from all, press 0 \nor\nIf u want to go back to menu, press 1\n");
+			printf("\n The data are ready to upload in database, \n Do u want to upload , press 2");
+			printf("\n Do u want to back to edit? , press 1 \n or \n Do u want to go back to mainmenu, press 0\n");
                         scanf("%d",&value); 
-			if(value==1) back=1; else {exit=0; back=1;}
+			if(value==1) back=1; 
+			else if (value==2) printf("under process"); 
+			else {exit=0; back=1;}
 			break;
 
 		case 2: view_data();

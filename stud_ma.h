@@ -18,5 +18,8 @@ extern student  s[10];
 void add();
 void add_data() ;
 void view_data();
+void upload();
+void conn();
+void terminate();
 void modify_data();
 void first_page(int);
