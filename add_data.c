@@ -136,9 +136,9 @@ void add_data(){
         int yorn;
         printf("\nDo u want to upload to database? (y->1/n->2)\n");
         scanf("%d",&yorn);
+
         if(yorn == 1){
-		for(int j=0;j< no_data;j++)
-                upload(dept,j);
+		for(int j=0;j< no_data;j++) upload(j);
         }
 	
 }
