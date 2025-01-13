@@ -22,4 +22,5 @@ void upload();
 void conn();
 void terminate();
 void modify_data();
-void first_page(int);
+void main_menu(int);
+void new_data();
